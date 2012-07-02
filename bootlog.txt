@@ -1,0 +1,611 @@
+=======================================================================
+Wireless Router WG7005G11-LF-88 Loader v0.03 build Feb  5 2009 15:59:08
+                    Arcadyan Technology Corporation
+=======================================================================
+flash id : 1C3115
+
+Copying boot params.....DONE
+
+Press Space Bar 3 times to enter command mode ...
+Flash Checking  Passed.
+
+Unzipping firmware at 0x80002000 ... [ZIP 3] [ZIP 1]  done
+
+In c_entry() function ...
+
+install_exception
+
+install exception handler ...
+install interrupt handler ...
+ulVal: 0x484fb
+Set GPIO #11 to OUTPUT
+Set GPIO #1 to OUTPUT
+Set GPIO #0 to OUTPUT
+Set GPIO #6 to INPUT
+Set GPIO #12 to INPUT
+Timer 0 is requested
+##### _ftext      = 0x80002000
+##### _fdata      = 0x8044A380
+##### __bss_start = 0x804D8A9C
+##### end         = 0x8186C618
+##### Backup Data from 0x8044A380 to 0x81874618~0x81902D34 len 583452
+##### Backup Data completed
+##### Backup Data verified
+[INIT] HardwareStartup ..
+[INIT] System Log Pool startup ...
+[INIT] MTinitialize ..
+CPU Clock 350000000 Hz
+init_US_counter : time1 = 270723 , time2 = 40272655, diff 40001932
+US_counter = 70
+ cnt1 41256286 cnt2 41258073, diff 1787
+Runtime code version: v1.0.07
+System startup...
+[INIT] Memory COLOR 0, 1600000 bytes ..
+[INIT] Memory COLOR 1, 1048576 bytes ..
+[INIT] Memory COLOR 2, 2089200 bytes ..
+[INIT] tcpip_startup ..
+Data size: 1251328
+38a1a0b12718c874cb0c5cb762ebeb5f
+Set flash memory layout to Boot Parameters found !!!
+Bootcode version: v0.03
+Serial number: JUT00K818116
+Hardware version: 01
+
+
+sizeof(struct III_Config_t) is 122720, nLen:122720, Magic:0x33343536
+
+my CFGVersionMagic = 33343536, old CFGVersionMagic on flash = 33343536
+my CFGsize = 122720, my CFGDescSize = 18156
+my Version = v1.0.07, Version on flash= v1.0.07
+[CONFIG] flash version:[v1.0.07], [0.0.0-7]
+[CONFIG] code version:[v1.0.07], [0.0.0-7]
+CFGsize on flash = 122720, CFGDescSize on flash = 18156
+OldCfgHexSize:6505
+Unzipping from 808213F8 to 8081CCFC ... [LZMA] done
+Uncompressed size = 18154
+Tail1 : END_III_Config_t
+
+Size of Old CFG_DESC is :18154!!!
+useCfgDesc:1
+MyCfgHexSize:6505
+Unzipping from 8081B378 to 80816C7C ... [LZMA] done
+Uncompressed size = 18154
+My CFGDescSize:18156
+useCfgDesc:1
+Tail : END_III_Config_t
+
+useCfgDesc:3
+
+Restore Config file from ver:v1.0.07!!!
+
+[CONFIG] Configuration in Flash is old version: 0.0.7
+[CONFIG] DS_Tail:[t_WRT120N]
+!!! Invalid wireless channel range 0 ~ 0
+!!! Use default value 1 ~ 11
+Country Code=0x0
+default route: 0.0.0.0
+BufferInit:
+BUF_HDR_SZ=192 BUF_ALIGN_SZ=8 BUFFER_OFFSET=416
+BUF_BUFSZ0=544 BUF_BUFSZ1=3424
+NUM_OF_B0=100 NUM_OF_B1=3000
+BUF_POOL0_SZ=73600 BUF_POOL1_SZ=10848000
+sizeof(BUFFER0)=736,sizeof(BUFFER1)=3616
+*BUF0=0x814b9960 *BUF1=0x80a61240
+Altgn *BUF0=0x814b9960 *BUF1=0x80a61240
+End at BUF0:0x814cb8e0, BUF1:0x814b9940
+
+BUF0[0]=0x814b9960 BUF1[0]=0x80a61240
+
+buffer0 pointer init OK!
+buffer1 pointer init OK!
+NetJobTableInit>
+atheros_tmr_init> base_timer.expire=2147483647
+RUNTASK id=1 rapi_tmr_task ...
+[qm_lnk_init] CLOCKHZ=100 ...
+[qm_cbq_enable] no QM attached
+[qm_cbq_detach] no QM is attached at link 0
+pkt_avgsz=250, pkt_maxsz=1604, mtu=1604
+f=99000/100000, ns_per_byte=80808/1000
+ptime=20000000/1000, cptime=202020/1000, offtime=407246/1000
+New cls: id=0, bw=80 ns/byte, maxd=0 ms,
+         maxb=32, minb=2, avgpktsz=250, maxpktsz=1604,
+         offtime=1, parent=0, borrow=0
+         pri=0, maxidle=1, minidle=-259,
+         maxq=96, clsfg=17
+pkt_avgsz=1604, pkt_maxsz=1604, mtu=1604
+f=989/100000, ns_per_byte=8080808/1000
+ptime=128320000/1000, cptime=18446744073709551615/1000, offtime=18446744073709551615/1000
+New cls: id=1, bw=8080 ns/byte, maxd=0 ms,
+         maxb=16, minb=1, avgpktsz=1604, maxpktsz=1604,
+         offtime=12833, parent=8186afdc, borrow=8186afdc
+         pri=5, maxidle=3419, minidle=-25923,
+         maxq=48, clsfg=21
+qm_cbq_attach(): cbqp->cbq_res=51
+pkt_avgsz=250, pkt_maxsz=1604, mtu=1604
+f=98010/100000, ns_per_byte=81624/1000
+ptime=20000000/1000, cptime=406080/1000, offtime=1663404/1000
+New cls: id=2, bw=81 ns/byte, maxd=0 ms,
+         maxb=32, minb=4, avgpktsz=250, maxpktsz=1604,
+         offtime=1, parent=8186afdc, borrow=8186afdc
+         pri=5, maxidle=1, minidle=-261,
+         maxq=48, clsfg=21
+pkt_avgsz=250, pkt_maxsz=1604, mtu=1604
+f=1/100000, ns_per_byte=4294967295/1000
+[qm_cbq_newcls] warning: bandwidth of the class may be low enough to cause INT overflow
+ptime=20000000/1000, cptime=18446744073709551615/1000, offtime=18446744073709551615/1000
+New cls: id=3, bw=1338830 ns/byte, maxd=0 ms,
+         maxb=16, minb=4, avgpktsz=250, maxpktsz=1604,
+         offtime=1370962, parent=818699dc, borrow=818699dc
+         pri=0, maxidle=0, minidle=-4294966,
+         maxq=96, clsfg=21
+pkt_avgsz=250, pkt_maxsz=1604, mtu=1604
+f=1/100000, ns_per_byte=4294967295/1000
+[qm_cbq_newcls] warning: bandwidth of the class may be low enough to cause INT overflow
+ptime=20000000/1000, cptime=18446744073709551615/1000, offtime=18446744073709551615/1000
+New cls: id=4, bw=1338830 ns/byte, maxd=0 ms,
+         maxb=16, minb=4, avgpktsz=250, maxpktsz=1604,
+         offtime=1370962, parent=818699dc, borrow=818699dc
+         pri=1, maxidle=0, minidle=-4294966,
+         maxq=48, clsfg=23
+pkt_avgsz=250, pkt_maxsz=1604, mtu=1604
+f=1/100000, ns_per_byte=4294967295/1000
+[qm_cbq_newcls] warning: bandwidth of the class may be low enough to cause INT overflow
+ptime=20000000/1000, cptime=18446744073709551615/1000, offtime=18446744073709551615/1000
+New cls: id=5, bw=1338830 ns/byte, maxd=0 ms,
+         maxb=16, minb=4, avgpktsz=250, maxpktsz=1604,
+         offtime=1370962, parent=818699dc, borrow=818699dc
+         pri=2, maxidle=0, minidle=-4294966,
+         maxq=48, clsfg=23
+pkt_avgsz=250, pkt_maxsz=1604, mtu=1604
+f=1/100000, ns_per_byte=4294967295/1000
+[qm_cbq_newcls] warning: bandwidth of the class may be low enough to cause INT overflow
+ptime=20000000/1000, cptime=18446744073709551615/1000, offtime=18446744073709551615/1000
+New cls: id=6, bw=1338830 ns/byte, maxd=0 ms,
+         maxb=16, minb=4, avgpktsz=250, maxpktsz=1604,
+         offtime=1370962, parent=818699dc, borrow=818699dc
+         pri=3, maxidle=0, minidle=-4294966,
+         maxq=48, clsfg=23
+pkt_avgsz=250, pkt_maxsz=1604, mtu=1604
+f=1/100000, ns_per_byte=4294967295/1000
+[qm_cbq_newcls] warning: bandwidth of the class may be low enough to cause INT overflow
+ptime=20000000/1000, cptime=18446744073709551615/1000, offtime=18446744073709551615/1000
+New cls: id=7, bw=1338830 ns/byte, maxd=0 ms,
+         maxb=16, minb=4, avgpktsz=250, maxpktsz=1604,
+         offtime=1370962, parent=818699dc, borrow=818699dc
+         pri=4, maxidle=0, minidle=-4294966,
+         maxq=48, clsfg=23
+pkt_avgsz=250, pkt_maxsz=1604, mtu=1604
+f=98010/100000, ns_per_byte=81624/1000
+ptime=20000000/1000, cptime=406080/1000, offtime=1663404/1000
+New cls: id=8, bw=81 ns/byte, maxd=0 ms,
+         maxb=16, minb=4, avgpktsz=250, maxpktsz=1604,
+         offtime=1, parent=818699dc, borrow=818699dc
+         pri=6, maxidle=1, minidle=-261,
+         maxq=48, clsfg=20
+CLOCKHZ=100
+[IfInit] ifno 0
+time = 08/01/2003, 00:00:00
+Interface 0 ip = 127.0.0.1
+
+[IfInit] ifno 1
+ag7240_init: Length per segment 1536
+Max segments per packet 1
+Max tx descriptor count  160
+Max rx descriptor count  252
+ag7240_init: fifo cfg 3 01f00140
+mask: 100
+ar7240_ahb_freq: 175000000
+cfg1 f cfg2 7014
+Setting PHY...
+w1: 687f74e8, w2: c3d90000
+ar7240_ahb_freq: 175000000
+cfg1 3f cfg2 7214
+ATHRS26: resetting s26
+ATHRS26: s26 reset done
+Setting PHY...
+w1: 687f74e8, w2: c3da0000
+MAC Address: 68:7f:74:e8:c3:d9
+time = 08/01/2003, 00:00:00
+Interface 1 ip = 192.168.1.1
+
+[IfInit] ifno 2
+AP91 hwlan_init
+Copy Powertable from flash, size 4096
+PCI Autoconfig: Memory region: [10000000-17ffffff]
+PCI Scan: Found Bus 0, Device 1, Function 0
+PCI Autoconfig: BAR 0, Mem, size=0x10000, address=0x10000000
+
+168c ff1c 0006 0010 0001 0200 0008 0000
+0004 0000 0000 0000 0000 0000 0000 0000
+0000 0000 0000 0000 0000 0000 0000 0000
+0000 0000 0040 0000 0000 0000 01ff 0000
+5001 5bc3 0000 0000 0000 0000 0000 0000
+6005 0000 0000 0000 0000 0000 0000 0000
+0010 0012 8cc0 0000 2010 0000 3811 0003
+0000 1011 0000 0000 0000 0000 0000 0000
+0000 0000 0010 0000 0000 0000 0000 0000
+0000 0000 0000 0000 0000 0000 0000 0000
+0000 0000 0000 0000 0000 0000 0000 0000
+0000 0000 0000 0000 0000 0000 0000 0000
+0000 0000 0000 0000 0000 0000 0000 0000
+0000 0000 0000 0000 0000 0000 0000 0000
+0000 0000 0000 0000 0000 0000 0000 0000
+0000 0000 0000 0000 0000 0000 0000 0000
+Address: 00000004
+interrupt : 000001ff
+
+###        00  01  168c  ff1c  0200  ff
+[HWLAN] ifno=2 irno=7 port=0x00000000
+[PCI] devtag=00000800 probe=800edf8c
+[HWLAN] devtag = 00000800
+[HWLAN] Vendor ID 0x168c
+[HWLAN] Device ID 0x2b
+[HWLAN] Base Addr 0xb0000000
+[HWLAN] SVendor ID 0x0
+[HWLAN] SDevice ID 0x0
+[HWLAN] Revision ID 0x1
+[HWLAN] interrupt vector 0x1
+AR7240 after _pci_find_pci_dev return OK!!
+ath_pci_probe : pdev=0x800
+PCI_CACHE_LINE_SIZE : 8
+after PCI_LATENCYTIMER
+pci_read_config_dword( dev_id, 0x40 ) return 1539526657
+ath_pci_probe : dev->name wifi0
+T_WIFI_INT=9
+dev=0x80a52fb8
+dev->priv=0x815c4500
+call ath_attach 1 : dev 80a52fb8 name 80a53864 wifi0
+ATH_INIT_TQUEUE() : 801049cc ???
+ATH_INIT_TQUEUE() : 80111b8c ???
+ATH_INIT_TQUEUE() : 80119d1c ???
+ATH_INIT_TQUEUE() : 800fefbc ???
+ATH_INIT_TQUEUE() : 80102ea0 ???
+ATH_INIT_TQUEUE() : 801049cc ???
+ATH_INIT_TQUEUE() : 800fedec ???
+ATH_INIT_TQUEUE() : 800ff3b0 ???
+[HWLAN] Set HWLAN MAC as LAN MAC ..
+ath_getchannels> nchan=18
+ath_getchannels> nchan=18
+ath_getchannels> nchan=18 match:7
+Chan  Freq  RegPwr  HT   CTL CTL_U CTL_L DFS
+   1  2412n     27  HT20  1    0    1     N
+   2  2417n     27  HT20  1    0    1     N
+   3  2422n     20  HT40  1    0    1     N
+   4  2427n     20  HT40  1    0    1     N
+   5  2432n     20  HT40  1    1    1     N
+   6  2437n     20  HT40  1    1    1     N
+   7  2442n     20  HT40  1    1    1     N
+   8  2447n     20  HT40  1    1    0     N
+   9  2452n     20  HT40  1    1    0     N
+  10  2457n     27  HT20  1    1    0     N
+  11  2462n     27  HT20  1    1    0     N
+ATH_INIT_TQUEUE() : 800fe0f0 ???
+ATH_INIT_TQUEUE() : 800fe0f0 ???
+ATH_INIT_TQUEUE() : 800fe0f0 ???
+dfs_init_radar_filters: dfs->dfs_rinfo.rn_numradars: 0
+DFS min filter rssiThresh = 18
+DFS max pulse dur = 131 ticks
+ieee80211_set11gbasicrates
+wifi0: 11ng rates: 1Mbps 2Mbps 5.5Mbps 11Mbps 6Mbps 9Mbps 12Mbps 18Mbps 24Mbps 36Mbps 48Mbps 54Mbps
+wifi0: 11ng MCS:  0,1,2,3,4,5,6,7
+wifi0: mac 192.2 phy 14.0 radio 12.0
+wifi0: Use hw queue 1 for WME_AC_BE traffic
+wifi0: Use hw queue 0 for WME_AC_BK traffic
+wifi0: Use hw queue 2 for WME_AC_VI traffic
+wifi0: Use hw queue 3 for WME_AC_VO traffic
+wifi0: Use hw queue 8 for CAB traffic
+wifi0: Use hw queue 9 for beacons
+wifi0: Use hw queue 7 for UAPSD
+call ath_attach 2 : dev 80a52fb8 name 80a53864 wifi0
+[wifi0] : Atheros 9285 : mem=0xffffffffb0000000, irq=0 hw_base=0x80000000
+[HWLAN] hwlan_init() end.
+time = 08/01/2003, 00:00:00
+[HWLAN] hwlan_ioctl() ..
+Interface 2 ip = 192.168.1.1
+
+[HWLAN] hwlan_ioctl() ..
+[IfInit] ifno 3
+MAC Address: 68:7f:74:e8:c3:da
+time = 08/01/2003, 00:00:00
+iput_IpLinkUp(ifno=3)> ifp->add_default_route:1
+Init NAT data structure
+[reset_sip_session] idx=0
+[reset_sip_session] idx=1
+[reset_sip_session] idx=2
+[reset_sip_session] idx=3
+[reset_sip_session] idx=4
+[reset_sip_session] idx=5
+[reset_sip_session] idx=6
+[reset_sip_session] idx=7
+[reset_sip_session] idx=8
+[reset_sip_session] idx=9
+[reset_sip_session] idx=10
+[reset_sip_session] idx=11
+[reset_sip_session] idx=12
+[reset_sip_session] idx=13
+[reset_sip_session] idx=14
+[reset_sip_session] idx=15
+[reset_sip_session] idx=16
+[reset_sip_session] idx=17
+[reset_sip_session] idx=18
+[reset_sip_session] idx=19
+[reset_sip_session] idx=20
+[reset_sip_session] idx=21
+[reset_sip_session] idx=22
+[reset_sip_session] idx=23
+[reset_sip_session] idx=24
+[reset_sip_session] idx=25
+[reset_sip_session] idx=26
+[reset_sip_session] idx=27
+[reset_sip_session] idx=28
+[reset_sip_session] idx=29
+[reset_sip_session] idx=30
+[reset_sip_session] idx=31
+Interface 3 ip = 0.0.0.0
+
+ruleCheck()> Group: 0,  Error: Useless rule index will be truncated
+ruleCheck()> Group: 1,  Error: Useless rule index will be truncated
+ruleCheck()> Group: 2,  Error: Useless rule index will be truncated
+CBAC rule format check succeed !!
+reqCBACBuf()> init match pool, Have: 1000
+Memory Address: 0x81809c74 ~ 0x818109f0
+reqCBACBuf()> init timeGap pool, Have: 10000
+Memory Address: 0x818109f0 ~ 0x81841744
+reqCBACBuf()> init sameHost pool, Have: 2000
+Memory Address: 0x81841744 ~ 0x81851164
+CBAC rule pool initialized !!
+[init_if] local_if_mask=0x107
+[init_if] local_wiredif_mask=0x102
+[init_if] local_wirelessif_mask=0x4
+[init_if] localorVPN_if_mask=0x1dd07
+Init NAT data structure
+No default route, no need to reinit the NAT data structure
+RUNTASK id=3 if_task if0...
+RUNTASK id=4 if_task if1...
+RUNTASK id=5 if_task if2...
+RUNTASK id=6 if_task if3...
+RUNTASK id=7 timer_task...
+RUNTASK id=8 conn_mgr...
+RUNTASK id=9 main_8021x...
+RUNTASK id=10 main_lltd...
+RUNTASK id=11 period_task...
+RUNTASK id=12 dhcp_daemon...
+RUNTASK id=13 dhcp_clt...on interface 3
+RUNTASK id=14 pptp_callmgr...
+RUNTASK id=15 L2tpd...
+[absread] flash_init: RAM's limitation is 32M
+found signature: 78h 56h 34h 12h
+ulImgLens=1041236, LENGTH[3]-12=1769460
+length checking OK
+[0] find End at 0xBF13E000 len=1041236
+---[ LZMA head start in 0xBF13E400 ]---
+found signature: 78h 56h 34h 12h
+ulImgLens=209333, LENGTH[3]-12=1769460
+length checking OK
+[1] find End at 0xBF171400 len=209333
+Image[1] at 0xBF040000, len = 1041236
+Image[2] at 0xBF13E400, len = 209333
+[absread]: [LZMA]
+unzipFileSize = 1420202, ulTmp = 1420800, ver = -2115350016, drive_start_addr[0] = -2115350016
+search_signature: BF13E400, area_id=2
+first image size -1 at 0xffffffffbf040000
+Unzipping from BF13E400 to 81EA5200 ... [LZMA] done
+Uncompressed size = 1420202
+drive start addr[0]=ffffffff81ea5200
+[HTTPD] flash_init: failed!!
+RUNTASK httpd...
+RUNTASK id=18 dnsproxy...
+RUNTASK id=19 rip...
+RUNTASK id=20 ripout...
+RUNTASK id=21 dhcpd_mgmt_task...
+UPnP is enabled
+UPNP Device initialize success! slot=22
+gConfig.WSC_Mode:1
+RUNTASK id=23 wscmain...
+RUNTASK id=24 wsc_Send_eap_packet...
+RUNTASK id=25 wsc_Send_UPNP_packet...
+RUNTASK id=26 WSC_WaitUserAction_Task...
+gConfig.WSC_Mode:1
+RUNTASK id=27 auto_changed_wan_ip...
+Starting Multitask...
+T_WLAN_INT=2
+gSetting.CountryCode=0x0
+gSetting.Interface[T_WLAN_INT].Link_Type=1
+RUNTASK id=28 apAppInit...
+[HWLAN] [1] rapi_tmr_task running
+ifno2dot1x_if[2]=0
+ifno2dot1x_if[9]=81
+dot1x_wireless_if_mask=0x204
+[main_8021x] dot1x_build_if_mapping() completed.
+[qm_outbnd_bw_update] ...
+[qm_cbq_resetclst] n_totalcls=9
+f=99000/100000, inverse_f=101010/100000, ns_per_byte=80808/1000
+ptime=20000000/1000, cptime=202020/1000, offtime=407246/1000
+aft rst: id=0, bw=80 ns/byte, maxd=0 ms,
+         maxb=32, minb=2, avgpktsz=250, maxpktsz=1604,
+         offtime=1, parent=0, borrow=0
+         pri=0, maxidle=1, minidle=-259,
+         maxq=96, clsfg=17
+f=989/100000, inverse_f=10101010/100000, ns_per_byte=8080808/1000
+ptime=128320000/1000, cptime=18446744073709551615/1000, offtime=18446744073709551615/1000
+aft rst: id=1, bw=8080 ns/byte, maxd=0 ms,
+         maxb=16, minb=1, avgpktsz=1604, maxpktsz=1604,
+         offtime=12833, parent=8186afdc, borrow=8186afdc
+         pri=5, maxidle=3419, minidle=-25923,
+         maxq=48, clsfg=21
+f=98010/100000, inverse_f=102030/100000, ns_per_byte=81624/1000
+ptime=20000000/1000, cptime=406080/1000, offtime=1663404/1000
+aft rst: id=2, bw=81 ns/byte, maxd=0 ms,
+         maxb=32, minb=4, avgpktsz=250, maxpktsz=1604,
+         offtime=1, parent=8186afdc, borrow=8186afdc
+         pri=5, maxidle=1, minidle=-261,
+         maxq=48, clsfg=21
+f=1/100000, inverse_f=18446744073709551615/100000, ns_per_byte=4294967295/1000
+ptime=20000000/1000, cptime=18446744073709551615/1000, offtime=18446744073709551615/1000
+aft rst: id=3, bw=1338830 ns/byte, maxd=0 ms,
+         maxb=16, minb=4, avgpktsz=250, maxpktsz=1604,
+         offtime=1370962, parent=818699dc, borrow=818699dc
+         pri=0, maxidle=0, minidle=-4294966,
+         maxq=96, clsfg=21
+f=1/100000, inverse_f=18446744073709551615/100000, ns_per_byte=4294967295/1000
+ptime=20000000/1000, cptime=18446744073709551615/1000, offtime=18446744073709551615/1000
+aft rst: id=4, bw=1338830 ns/byte, maxd=0 ms,
+         maxb=16, minb=4, avgpktsz=250, maxpktsz=1604,
+         offtime=1370962, parent=818699dc, borrow=818699dc
+         pri=1, maxidle=0, minidle=-4294966,
+         maxq=48, clsfg=23
+f=1/100000, inverse_f=18446744073709551615/100000, ns_per_byte=4294967295/1000
+ptime=20000000/1000, cptime=18446744073709551615/1000, offtime=18446744073709551615/1000
+aft rst: id=5, bw=1338830 ns/byte, maxd=0 ms,
+         maxb=16, minb=4, avgpktsz=250, maxpktsz=1604,
+         offtime=1370962, parent=818699dc, borrow=818699dc
+         pri=2, maxidle=0, minidle=-4294966,
+         maxq=48, clsfg=23
+f=1/100000, inverse_f=18446744073709551615/100000, ns_per_byte=4294967295/1000
+ptime=20000000/1000, cptime=18446744073709551615/1000, offtime=18446744073709551615/1000
+aft rst: id=6, bw=1338830 ns/byte, maxd=0 ms,
+         maxb=16, minb=4, avgpktsz=250, maxpktsz=1604,
+         offtime=1370962, parent=818699dc, borrow=818699dc
+         pri=3, maxidle=0, minidle=-4294966,
+         maxq=48, clsfg=23
+f=1/100000, inverse_f=18446744073709551615/100000, ns_per_byte=4294967295/1000
+ptime=20000000/1000, cptime=18446744073709551615/1000, offtime=18446744073709551615/1000
+aft rst: id=7, bw=1338830 ns/byte, maxd=0 ms,
+         maxb=16, minb=4, avgpktsz=250, maxpktsz=1604,
+         offtime=1370962, parent=818699dc, borrow=818699dc
+         pri=4, maxidle=0, minidle=-4294966,
+         maxq=48, clsfg=23
+f=98010/100000, inverse_f=102030/100000, ns_per_byte=81624/1000
+ptime=20000000/1000, cptime=406080/1000, offtime=1663404/1000
+aft rst: id=8, bw=81 ns/byte, maxd=0 ms,
+         maxb=16, minb=4, avgpktsz=250, maxpktsz=1604,
+         offtime=1, parent=818699dc, borrow=818699dc
+         pri=6, maxidle=1, minidle=-261,
+         maxq=48, clsfg=20
+apAppInit called ????
+ath_create_vap: ifr.ifr_name = wifi0 (before ioctl)
+alloc_etherdev: name = wlan0
+alloc_etherdev> dev->priv = 0x806458C4 **********
+should asigned hard_start_xmit and open in dev structure ???
+ath_create_vap: ifr.ifr_name = wlan0 (after ioctl)
+apAppInit: ath_create_ap, T_WLAN_INT done
+apAppInit> if_table[T_WIFI_INT]=0x0
+should check capable(CAP_NET_ADMIN) ???
+Mixed 802.11n, 802.11g and 802.11b
+should check capable(CAP_NET_ADMIN) ???
+------------------->change mode to argv[3] 11NG ,Success
+should check capable(CAP_NET_ADMIN) ???
+------------------->change nohtie to argv[3] 0 ,Success
+should check capable(CAP_NET_ADMIN) ???
+ath_getchannels> nchan=18
+ath_getchannels> nchan=18
+ath_getchannels> nchan=18 match:7
+------------------->change pureb to argv[3] 0 ,Success
+should check capable(CAP_NET_ADMIN) ???
+------------------->change pureg to argv[3] 0 ,Success
+should check capable(CAP_NET_ADMIN) ???
+------------------->change puren to argv[3] 0 ,Success
+should check capable(CAP_NET_ADMIN) ???
+should check capable(CAP_NET_ADMIN) ???
+should check capable(CAP_NET_ADMIN) ???
+should check capable(CAP_NET_ADMIN) ???
+SSID linksys
+should check capable(CAP_NET_ADMIN) ???
+should check capable(CAP_NET_ADMIN) ???
+set_info> set Channel, args=6
+Set Channel : channel = 6
+Set Channel : wrq.u.freq.m=6,wrq.u.freq.e=0,wrq.u.freq.i=0,wrq.u.freq.flags=1
+should check capable(CAP_NET_ADMIN) ???
+should check capable(CAP_NET_ADMIN) ???
+should check capable(CAP_NET_ADMIN) ???
+rts threshold: off
+should check capable(CAP_NET_ADMIN) ???
+should check capable(CAP_NET_ADMIN) ???
+should check capable(CAP_NET_ADMIN) ???
+should check capable(CAP_NET_ADMIN) ???
+should check capable(CAP_NET_ADMIN) ???
+should check capable(CAP_NET_ADMIN) ???
+should check capable(CAP_NET_ADMIN) ???
+should check capable(CAP_NET_ADMIN) ???
+hidSSID 0
+should check capable(CAP_NET_ADMIN) ???
+init_lx_acl>
+init_lx_acl> acl=NULL
+should check capable(CAP_NET_ADMIN) ???
+ap_deauth_sta called ???
+[hostapd]: should check capable(CAP_NET_ADMIN) ???
+should check capable(CAP_NET_ADMIN) ???
+Turn off WEP Success
+[Config Hwlan Sec] : AUTH_OPEN_SYSTEM
+should check capable(CAP_NET_ADMIN) ???
+Set Auth mode:1 Success
+apAppInit : ifno:2 dev->flags  00000000
+1 dev_open: dev->open = 8018e688, dev->name = wlan0
+1 dev_open: dev->open = 800ff60c, dev->name = wifi0
+rapi_tmr_cancel: cookie 815c78bc, Initialized=1
+ 00000000 815c7988 815c4548 815c59c4
+cookie 815c78bc 815c7988
+cookie 815c78bc 815c4548
+cookie 815c78bc 815c59c4
+rapi_tmr_cancel: can't find time structure cookie 815c78bc
+rapi_tmr_cancel: cookie 80645af0, Initialized=1
+ 00000000 815c7988 815c4548 815c59c4
+cookie 80645af0 815c7988
+cookie 80645af0 815c4548
+cookie 80645af0 815c59c4
+rapi_tmr_cancel: can't find time structure cookie 80645af0
+rapi_tmr_cancel: cookie 815c78bc, Initialized=1
+ 00000000 815c7988 815c4548 815c59c4
+cookie 815c78bc 815c7988
+cookie 815c78bc 815c4548
+cookie 815c78bc 815c59c4
+rapi_tmr_cancel: can't find time structure cookie 815c78bc
+rapi_tmr_cancel: cookie 80645af0, Initialized=1
+ 00000000 815c7988 815c4548 815c59c4
+cookie 80645af0 815c7988
+cookie 80645af0 815c4548
+cookie 80645af0 815c59c4
+rapi_tmr_cancel: can't find time structure cookie 80645af0
+rapi_tmr_cancel: cookie 815c78bc, Initialized=1
+ 00000000 815c7988 815c4548 815c59c4
+cookie 815c78bc 815c7988
+cookie 815c78bc 815c4548
+cookie 815c78bc 815c59c4
+rapi_tmr_cancel: can't find time structure cookie 815c78bc
+rapi_tmr_cancel: cookie 80645af0, Initialized=1
+ 00000000 815c7988 815c4548 815c59c4
+cookie 80645af0 815c7988
+cookie 80645af0 815c4548
+cookie 80645af0 815c59c4
+rapi_tmr_cancel: can't find time structure cookie 80645af0
+enable HW0 --> PCI
+[qm_cbq_enable] CBQ enabled at link: 0, DeQTask=28, wakeup event=7, res=51
+                low_pri_mtu: 53392
+[qm_cbq_dequeue] task_event=7, res=51
+[qm_outbnd_bw_update] ok
+[dhcp_clt] enable dhcp client in interface WAN[3]
+upnp_Init: flag=0
+SSDP Initialization completed...
+GenaInit : event_hook is NULL!!
+*** Eliminate comment(.*s)
+
+*********************************************
+****Wi-Fi Simple Config Application*****
+Version: Build 1.02, Apr 10 2012 15:26:03
+*********************************************
+wsc_Send_eap_packet:udpFdupnp_wcn:27;;udpFdupnp:29
+[reset_802dot1x] wireless module ready
+[init_wpa] dot1x_ready[0]=1
+[dot1x] : func blob_portstatus_set_global   <---------------------
+[init_wpa] dot1x_ready[1]=1
+[reset_802dot1x] 802.1Xv2 ready
+
+******* MODE: Access Point *******
+
+Options:
+0. Quit
+1. Get configured
+2. Get configured via push-button
+3. Get configured using IEs
+Enter selection: ***gp_mc->mp_info->GetSwitchMode():1
+Waiting for Registrar to connect...

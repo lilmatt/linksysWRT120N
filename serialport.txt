@@ -1,0 +1,7 @@
++3.3VDC o  o GND
+        o  o
+        o  o TX
+        o  o
+        o  o < 
+
+Console on boot is 115200 8N1
